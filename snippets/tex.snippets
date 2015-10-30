@@ -1,0 +1,53 @@
+# beamer frames
+snippet frame simple
+	\begin{frame}\frametitle{${1}}
+		${2}
+	\end{frame}
+snippet frame single block
+	\begin{frame}\frametitle{${1}}
+		\begin{block}{${2}}
+		${3}
+		\end{block}
+	\end{frame}
+snippet frame two vertical blocks
+	\begin{frame}\frametitle{${1}}
+		\begin{block}{${2}}
+		${3}
+		\end{block}
+		\begin{block}{${4}}
+		${5}
+		\end{block}
+	\end{frame}
+snippet frame two columns
+	\begin{frame}\frametitle{${1}}
+		\begin{columns}
+		\begin{column}[l]{5cm}
+		${2}
+		\end{column}
+		\begin{column}[r]{5cm}
+		${3}
+		\end{column}
+		\end{columns}
+	\end{frame}
+snippet block
+	\begin{block}{${1}}
+		${2}
+	\end{block}
+snippet alert
+	\alert{${1}}${2}
+snippet emph
+	\emph{${1}}${2}
+snippet beam figure
+	\begin{center}
+	     \begin{figure}
+	     \scalebox{0.75}{
+	     \includegraphics{${1}} }
+	     \caption{${2}}
+	      \end{figure}      
+	\end{center}
+snippet beam table
+	\begin{center}
+	\begin{${1:tabular}}{${2:c}}
+	  ${3} \\\hline
+	\end{tabular}
+	\end{center}
