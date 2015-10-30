@@ -19,3 +19,20 @@ Note that there are a view Plugins that might require additional feeding and car
 	git clone https://github.com/garbas/vim-snipmate.git
 	git clone https://github.com/honza/vim-snippets.git 
 
+
+
+## Powerline
+
+To get powerline working on OS X (El Capitan) I first switched to zshell using [these directions](http://www.chenhuijing.com/blog/bash-to-zsh/).
+Then built a new macvim using homebrew:
+
+    brew install macvim --with-override-system-vim
+    brew linkapps macvim
+    mvim
+    /usr/local/bin/mvim
+    export PATH
+    export $PATH
+    brew doctor
+    macvim
+    brew unlink vim
+    brew link macvim
