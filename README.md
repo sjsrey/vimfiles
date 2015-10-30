@@ -9,13 +9,6 @@ This relies on [Vundle](https://github.com/VundleVim/Vundle.vim) for managing Pl
 	ln -s ~/.vim/vimrc ~/.vimrc
 	vim
 	:PluginInstall
+	:q
 
-
-Note that there are a view Plugins that might require additional feeding and care. In particular, the `snipmate` related Plugins had to be installed by hand:
-	
-	cd ~/.vim/bundle
-	git clone https://github.com/tomtom/tlib_vim.git
-	git clone https://github.com/MarcWeber/vim-addon-mw-utils.git
-	git clone https://github.com/garbas/vim-snipmate.git
-	git clone https://github.com/honza/vim-snippets.git 
-
+From that point on, you can install additional plugins using [Vundle](https://github.com/VundleVim/Vundle.vim).
