@@ -19,3 +19,6 @@ Note that there are a view Plugins that might require additional feeding and car
 	git clone https://github.com/garbas/vim-snipmate.git
 	git clone https://github.com/honza/vim-snippets.git 
 
+## Linux-specific Installation
+
+See the [linux branch](https://github.com/sjsrey/vimfiles/tree/linux)
