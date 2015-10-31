@@ -22,10 +22,9 @@ See http://powerline.readthedocs.org/en/master/installation/linux.html#fonts-ins
 
 Translating this lead to:
 
-1. cd ~; wget https://github.com/powerline/fonts/archive/master.zip 
-2. unzip master.zip
-3. mkdir ~/.fonts
-4. cd fonts-master
-5. cp UbuntuMono/*.ttf ~/.fonts/.
-6. fc-cache -vf ~/.fonts/ 
-
+1. `cd ~; wget https://github.com/powerline/fonts/archive/master.zip`	
+2. `unzip master.zip`
+3. `mkdir ~/.fonts`
+4. `cd fonts-master`
+5. `cp UbuntuMono/*.ttf ~/.fonts/.`
+6. `fc-cache -vf ~/.fonts/ `
