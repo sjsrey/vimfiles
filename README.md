@@ -12,7 +12,6 @@ This relies on [Vundle](https://github.com/VundleVim/Vundle.vim) for managing Pl
 
 ## Powerline on Linux
 
-
 1. Follow these [directions](http://www.linuxdeveloper.space/install-vim-powerline/)
 2. Restart a terminal
 
