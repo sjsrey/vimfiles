@@ -11,7 +11,20 @@ This relies on [Vundle](https://github.com/VundleVim/Vundle.vim) for managing Pl
 	:PluginInstall
 	:q
 
-
 ## Linux-specific Installation
 
-See the [linux branch](https://github.com/sjsrey/vimfiles/tree/linux)
+1. Follow these [directions](http://www.linuxdeveloper.space/install-vim-powerline/)
+2. Restart a terminal
+
+At this point terminal vim should have the nice powerline status bar, but gvim isn't there yet. To fix this we need to go the patched font route.
+
+See http://powerline.readthedocs.org/en/master/installation/linux.html#fonts-installation
+
+Translating this lead to:
+
+1. `cd ~; wget https://github.com/powerline/fonts/archive/master.zip`	
+2. `unzip master.zip`
+3. `mkdir ~/.fonts`
+4. `cd fonts-master`
+5. `cp UbuntuMono/*.ttf ~/.fonts/.`
+6. `fc-cache -vf ~/.fonts/ `
