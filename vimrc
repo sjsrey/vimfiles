@@ -55,4 +55,5 @@ python powerline_setup()
 python del powerline_setup
 set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 13
 set laststatus=2
-
+set background=dark
+set vb
