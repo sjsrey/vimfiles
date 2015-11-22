@@ -35,8 +35,9 @@ Plugin 'honza/vim-snippets'
 " python
 Plugin 'Python-mode-klen'
 
-" Bundles
-"
+" Solarized
+Plugin 'altercation/vim-colors-solarized'
+
 
 " Now we can turn our filetype functionality back on
 filetype plugin indent on
@@ -56,4 +57,5 @@ python del powerline_setup
 set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 13
 set laststatus=2
 set background=dark
+colorscheme solarized
 set vb
