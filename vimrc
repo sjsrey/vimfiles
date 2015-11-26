@@ -42,6 +42,7 @@ Plugin 'altercation/vim-colors-solarized'
 "vim-notes
 Plugin 'vim-misc'
 Plugin 'file:///home/serge/.vim/bundle/vim-notes'
+"Plugin 'vim-shell'
 
 
 " Now we can turn our filetype functionality back on
@@ -66,4 +67,6 @@ colorscheme solarized
 set vb
 
 
+"vim-notes
 let g:notes_directories = ['~/Dropbox/v/vim-notes']
+let g:notes_suffix = ".md"
