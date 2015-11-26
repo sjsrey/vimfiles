@@ -39,6 +39,11 @@ Plugin 'Python-mode-klen'
 Plugin 'altercation/vim-colors-solarized'
 
 
+"vim-notes
+Plugin 'vim-misc'
+Plugin 'file:///home/serge/.vim/bundle/vim-notes'
+
+
 " Now we can turn our filetype functionality back on
 filetype plugin indent on
 
@@ -59,3 +64,6 @@ set laststatus=2
 set background=dark
 colorscheme solarized
 set vb
+
+
+let g:notes_directories = ['~/Dropbox/v/vim-notes']
