@@ -41,7 +41,8 @@ Plugin 'altercation/vim-colors-solarized'
 
 "vim-notes
 Plugin 'vim-misc'
-Plugin 'file:///home/serge/.vim/bundle/vim-notes'
+"Plugin 'file:///home/serge/.vim/bundle/vim-notes'
+Plugin 'xolox/vim-notes'
 "Plugin 'vim-shell'
 
 
