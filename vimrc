@@ -39,6 +39,7 @@ Plugin 'Python-mode-klen'
 Plugin 'altercation/vim-colors-solarized'
 
 
+
 " Now we can turn our filetype functionality back on
 filetype plugin indent on
 
@@ -57,5 +58,11 @@ python del powerline_setup
 set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 13
 set laststatus=2
 set background=dark
-colorscheme solarized
+"colorscheme solarized
 set vb
+
+"vim-notes
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-notes'
+let g:notes_directories = ['~/Dropbox/v/vim-notes']
+let g:notes_suffix = '.md'
