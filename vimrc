@@ -39,19 +39,14 @@ Plugin 'Python-mode-klen'
 Plugin 'altercation/vim-colors-solarized'
 
 
-<<<<<<< HEAD
-=======
 "vim-notes
 Plugin 'vim-misc'
-"Plugin 'file:///home/serge/.vim/bundle/vim-notes'
 Plugin 'xolox/vim-notes'
-"Plugin 'vim-shell'
-
->>>>>>> 588ec52009dd6a2af116cec2d7455ca4cb4081c6
+let g:notes_directories = ['~/Dropbox/v/vim-notes']
+let g:notes_suffix = '.md'
 
 " Now we can turn our filetype functionality back on
 filetype plugin indent on
-
 
 
 "NonVundle Stuff
@@ -70,15 +65,3 @@ set background=dark
 "colorscheme solarized
 set vb
 
-<<<<<<< HEAD
-"vim-notes
-Plugin 'xolox/vim-misc'
-Plugin 'xolox/vim-notes'
-let g:notes_directories = ['~/Dropbox/v/vim-notes']
-let g:notes_suffix = '.md'
-=======
-
-"vim-notes
-let g:notes_directories = ['~/Dropbox/v/vim-notes']
-let g:notes_suffix = ".md"
->>>>>>> 588ec52009dd6a2af116cec2d7455ca4cb4081c6
