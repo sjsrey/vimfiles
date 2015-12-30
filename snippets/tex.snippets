@@ -29,6 +29,12 @@ snippet frame two columns
 		\end{column}
 		\end{columns}
 	\end{frame}
+snippet frame figure
+	\begin{frame}{${1}}
+	    \begin{center}
+	\includegraphics[width=\textwidth,height=0.8\textheight,keepaspectratio]{${2}}
+	    \end{center}
+	\end{frame}
 snippet block
 	\begin{block}{${1}}
 		${2}
