@@ -11,6 +11,7 @@ This relies on [Vundle](https://github.com/VundleVim/Vundle.vim) for managing Pl
 	:PluginInstall
 	:q
 
+
 ## Linux-specific Installation
 
 1. Follow these [directions](http://www.linuxdeveloper.space/install-vim-powerline/)
@@ -28,3 +29,8 @@ Translating this lead to:
 4. `cd fonts-master`
 5. `cp UbuntuMono/*.ttf ~/.fonts/.`
 6. `fc-cache -vf ~/.fonts/ `
+
+
+## Windows-specific instructions
+
+Using MINGW64 it appears that the sym links in the installation instructions do not work.
