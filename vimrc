@@ -66,6 +66,6 @@ set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 13
 "set guifont=Inconsolata\ for\ Powerline:h14h
 set laststatus=2
 set background=dark
-"colorscheme solarized
+colorscheme solarized
 set vb
 
