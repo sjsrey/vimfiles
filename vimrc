@@ -68,4 +68,5 @@ set laststatus=2
 set background=dark
 colorscheme solarized
 set vb
+set tw=78
 
