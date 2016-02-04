@@ -13,7 +13,6 @@ This relies on [Vundle](https://github.com/VundleVim/Vundle.vim) for managing Pl
 
 ## Linux-specific Installation
 
-Translating this lead to:
 
 ```
 pip install --user git+git://github.com/Lokaltog/powerline
@@ -22,23 +21,18 @@ wget https://github.com/Lokaltog/powerline/raw/develop/font/PowerlineSymbols.otf
 mkdir .local/share/fonts
 mv PowerlineSymbols.otf ~/.local/share/fonts/
 sudo fc-cache -f -v
-```
-Restart a terminal, then
-
-```
 wget https://github.com/Lokaltog/powerline/raw/develop/font/10-powerline-symbols.conf
 mkdir -p ~/.config/fontconfig/fonts.conf
 mv 10-powerline-symbols.conf ~/.config/fontconfig/fonts.conf/
 cd ~; wget https://github.com/powerline/fonts/archive/master.zip
 unzip master zip
-unzip master.zip
 mkdir ~/.fonts
 cd fonts-master/
 cp UbuntuMono/*.ttf ~/.fonts/.
 fc-cache -vf ~/.fonts/
 ```
 
-Adopted from :
+Adapted from :
 
 http://www.linuxdeveloper.space/install-vim-powerline/
 
