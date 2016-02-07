@@ -39,11 +39,11 @@ Plugin 'Python-mode-klen'
 Plugin 'altercation/vim-colors-solarized'
 
 
-"vim-notes
-Plugin 'vim-misc'
-Plugin 'xolox/vim-notes'
-let g:notes_directories = ['~/Dropbox/v/vim-notes']
-let g:notes_suffix = '.md'
+""vim-notes (Uncomment after setting up dropbox on a new machine)
+"Plugin 'vim-misc'
+"Plugin 'xolox/vim-notes'
+"let g:notes_directories = ['~/Dropbox/v/vim-notes']
+"let g:notes_suffix = '.md'
 
 " Now we can turn our filetype functionality back on
 filetype plugin indent on
