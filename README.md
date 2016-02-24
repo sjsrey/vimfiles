@@ -25,7 +25,7 @@ wget https://github.com/Lokaltog/powerline/raw/develop/font/10-powerline-symbols
 mkdir -p ~/.config/fontconfig/fonts.conf
 mv 10-powerline-symbols.conf ~/.config/fontconfig/fonts.conf/
 cd ~; wget https://github.com/powerline/fonts/archive/master.zip
-unzip master zip
+unzip master.zip
 mkdir ~/.fonts
 cd fonts-master/
 cp UbuntuMono/*.ttf ~/.fonts/.
