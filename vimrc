@@ -54,5 +54,11 @@ imap jj 
 python from powerline.vim import setup as powerline_setup
 python powerline_setup()
 python del powerline_setup
-set guifont=InputMono:h18
+
+if has("gui_running")
+	let s:uname = system("uname")
+	if s:uname == "Darwin\n"
+		set guifont=Inconsolata\ for\ Powerline:h15
+	endif
+endif
 set laststatus=2
