@@ -38,7 +38,10 @@ Plugin 'Python-mode-klen'
 " Solarized
 Plugin 'altercation/vim-colors-solarized'
 
+" goyo
+Plugin 'junegunn/goyo.vim'
 
+"
 ""vim-notes (Uncomment after setting up dropbox on a new machine)
 "Plugin 'vim-misc'
 "Plugin 'xolox/vim-notes'
