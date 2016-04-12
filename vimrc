@@ -38,6 +38,9 @@ Plugin 'Python-mode-klen'
 " Solarized
 Plugin 'altercation/vim-colors-solarized'
 
+" Goyo
+Plugin 'junegunn/goyo.vim'
+
 
 ""vim-notes (Uncomment after setting up dropbox on a new machine)
 "Plugin 'vim-misc'
@@ -57,7 +60,7 @@ imap jj 
 
 "powerline
 
-"source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
+source /home/serge/anaconda2/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
 
 python from powerline.vim import setup as powerline_setup
 python powerline_setup()
@@ -69,4 +72,22 @@ set background=dark
 colorscheme solarized
 set vb
 set tw=78
+
+
+"todo.txt
+iab <expr> d1d system("date -d '+1 days' +'%Y-%m-%d'")
+iab <expr> d2d system("date -d '+2 days' +'%Y-%m-%d'")
+iab <expr> d3d system("date -d '+3 days' +'%Y-%m-%d'")
+iab <expr> d4d system("date -d '+4 days' +'%Y-%m-%d'")
+iab <expr> d5d system("date -d '+5 days' +'%Y-%m-%d'")
+iab <expr> d6d system("date -d '+6 days' +'%Y-%m-%d'")
+iab <expr> d1w system("date -d '+1 weeks' +'%Y-%m-%d'")
+iab <expr> d2w system("date -d '+2 weeks' +'%Y-%m-%d'")
+iab <expr> d3w system("date -d '+3 weeks' +'%Y-%m-%d'")
+iab <expr> d1m system("date -d '+1 months' +'%Y-%m-%d'")
+iab <expr> d2m system("date -d '+2 months' +'%Y-%m-%d'")
+iab <expr> d3m system("date -d '+3 months' +'%Y-%m-%d'")
+iab <expr> d4m system("date -d '+4 months' +'%Y-%m-%d'")
+iab <expr> d5m system("date -d '+5 months' +'%Y-%m-%d'")
+iab <expr> d6m system("date -d '+6 months' +'%Y-%m-%d'")
 
