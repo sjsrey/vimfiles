@@ -43,10 +43,10 @@ Plugin 'junegunn/goyo.vim'
 
 "
 ""vim-notes (Uncomment after setting up dropbox on a new machine)
-"Plugin 'vim-misc'
-"Plugin 'xolox/vim-notes'
-"let g:notes_directories = ['~/Dropbox/v/vim-notes']
-"let g:notes_suffix = '.md'
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-notes'
+let g:notes_directories = ['~/Dropbox/v/vim-notes']
+let g:notes_suffix = '.md'
 
 " Now we can turn our filetype functionality back on
 filetype plugin indent on
@@ -91,3 +91,15 @@ iab <expr> d4m system("date -d '+4 months' +'%Y-%m-%d'")
 iab <expr> d5m system("date -d '+5 months' +'%Y-%m-%d'")
 iab <expr> d6m system("date -d '+6 months' +'%Y-%m-%d'")
 
+"vim notes
+imap ;nn :wviw\en
+imap ;r :RecentNotes
+nmap ;nn :wviw\en
+nmap ;r :RecentNotes
+imap <C-]> <C-o>:SearchNotes<CR>
+nmap <C-]> :SearchNotes<CR>
+imap <2-LeftMouse> <C-o>:SearchNotes<CR>
+nmap <2-LeftMouse> :SearchNotes<CR>
+
+"vimscpt the hard way
+map - dd
