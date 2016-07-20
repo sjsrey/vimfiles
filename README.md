@@ -1,8 +1,18 @@
-#Customized installation of Vim and related plugins
+# Customized installation of Vim and related plugins
+
+## Set up z-shell
+
+The dotfiles for vim assume that powerline has been setup.
+The powerline setup used in this setup follows these [instructions](https://www.chenhuijing.com/blog/bash-to-zsh/#<%C0). This will also convert the shell to zsh from bash.
+
+The one item not explictly covered in the previous instructions is the installation of the fonts. To do this simply do the following:
+
+1. `git clone https://github.com/powerline/fonts.git ~/fonts`
+2. Open fontbook and add all the fonts using the `+` and navigating to `~/fonts`
+
+## Installation
 
 This relies on [Vundle](https://github.com/VundleVim/Vundle.vim) for managing Plugins so that the same Vim setup can be maintained across different machines.
-
-##Installation
 
 	git clone https://github.com/sjsrey/vimfiles.git ~/.vim
 	git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
@@ -10,7 +20,3 @@ This relies on [Vundle](https://github.com/VundleVim/Vundle.vim) for managing Pl
 	vim
 	:PluginInstall
 	:q
-
-## Mac-specific Installation
-
-To setup the proper fonts see [these instructions](https://coderwall.com/p/yiot4q/setup-vim-powerline-and-iterm2-on-mac-os-x)
