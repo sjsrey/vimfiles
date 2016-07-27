@@ -60,36 +60,24 @@ imap jj 
 
 "powerline
 
-source /home/serge/anaconda2/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
-
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
+source /home/serge/.local/lib/python3.5/site-packages/powerline/bindings/vim/plugin/powerline.vim
+"
+"python from powerline.vim import setup as powerline_setup
+"python powerline_setup()
+"python del powerline_setup
 set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 13
 "set guifont=Inconsolata\ for\ Powerline:h14h
 set laststatus=2
+colorscheme default
 set background=dark
-colorscheme solarized
+if has("gui_running")
+	colorscheme solarized
+endif
 set vb
 set tw=78
 
 
-"todo.txt
-iab <expr> d1d system("date -d '+1 days' +'%Y-%m-%d'")
-iab <expr> d2d system("date -d '+2 days' +'%Y-%m-%d'")
-iab <expr> d3d system("date -d '+3 days' +'%Y-%m-%d'")
-iab <expr> d4d system("date -d '+4 days' +'%Y-%m-%d'")
-iab <expr> d5d system("date -d '+5 days' +'%Y-%m-%d'")
-iab <expr> d6d system("date -d '+6 days' +'%Y-%m-%d'")
-iab <expr> d1w system("date -d '+1 weeks' +'%Y-%m-%d'")
-iab <expr> d2w system("date -d '+2 weeks' +'%Y-%m-%d'")
-iab <expr> d3w system("date -d '+3 weeks' +'%Y-%m-%d'")
-iab <expr> d1m system("date -d '+1 months' +'%Y-%m-%d'")
-iab <expr> d2m system("date -d '+2 months' +'%Y-%m-%d'")
-iab <expr> d3m system("date -d '+3 months' +'%Y-%m-%d'")
-iab <expr> d4m system("date -d '+4 months' +'%Y-%m-%d'")
-iab <expr> d5m system("date -d '+5 months' +'%Y-%m-%d'")
-iab <expr> d6m system("date -d '+6 months' +'%Y-%m-%d'")
+
 
 "vim notes
 imap ;nn :wviw\en
