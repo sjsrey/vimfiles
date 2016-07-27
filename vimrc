@@ -37,6 +37,7 @@ Plugin 'Python-mode-klen'
 
 " Solarized
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'rakr/vim-two-firewatch'
 
 " goyo
 Plugin 'junegunn/goyo.vim'
@@ -64,9 +65,7 @@ source /home/serge/.local/lib/python3.5/site-packages/powerline/bindings/vim/plu
 "
 "python from powerline.vim import setup as powerline_setup
 "python powerline_setup()
-"python del powerline_setup
 set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 13
-"set guifont=Inconsolata\ for\ Powerline:h14h
 set laststatus=2
 colorscheme default
 set background=dark
@@ -75,7 +74,6 @@ if has("gui_running")
 endif
 set vb
 set tw=78
-
 
 
 
