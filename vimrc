@@ -61,7 +61,7 @@ imap jj 
 
 "powerline
 
-source /home/serge/.local/lib/python3.5/site-packages/powerline/bindings/vim/plugin/powerline.vim
+"source /home/serge/.local/lib/python3.5/site-packages/powerline/bindings/vim/plugin/powerline.vim
 "
 "python from powerline.vim import setup as powerline_setup
 "python powerline_setup()
