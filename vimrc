@@ -73,6 +73,7 @@ set background=dark
 if has('gui_running')
 	colorscheme solarized
 endif
+"colorscheme solarized
 set vb
 set tw=78
 
@@ -129,3 +130,5 @@ map - dd
 
 nmap <silent> <F3> :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
+" softwrap lines
+au BufRead,BufNewFile *.md,*.txt,*.tex set wrap linebreak nolist textwidth=0 wrapmargin=0
