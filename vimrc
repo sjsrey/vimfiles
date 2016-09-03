@@ -70,7 +70,9 @@ set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 13
 set laststatus=2
 colorscheme default
 set background=dark
-"colorscheme solarized
+if has('gui_running')
+	colorscheme solarized
+endif
 set vb
 set tw=78
 
