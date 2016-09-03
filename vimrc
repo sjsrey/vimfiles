@@ -60,7 +60,7 @@ imap jj 
 
 "powerline
 
-source /home/serge/anaconda2/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
+"source /home/serge/anaconda2/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
 
 python from powerline.vim import setup as powerline_setup
 python powerline_setup()
@@ -69,7 +69,7 @@ set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 13
 "set guifont=Inconsolata\ for\ Powerline:h14h
 set laststatus=2
 set background=dark
-colorscheme solarized
+"colorscheme solarized
 set vb
 set tw=78
 
