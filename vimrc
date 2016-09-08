@@ -107,3 +107,6 @@ nmap <2-LeftMouse> :SearchNotes<CR>
 
 "vimscpt the hard way
 map - dd
+
+" softwrap lines in md, txt
+"au BufRead,BufNewFile *.md,*.txt,*.tex set wrap linebreak nolist textwidth=0 wrapmargin=0
