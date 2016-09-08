@@ -16,7 +16,7 @@ Plugin 'scrooloose/nerdtree.git'
 Plugin 'Buffergator'
 
 " Additional plugins 
-
+Plugin 'reedes/vim-pencil'
 Plugin 'LaTeX-Suite-aka-Vim-LaTeX'
 Plugin 'instant-markdown.vim'
 Plugin 'MarkdownFootnotes'
@@ -60,7 +60,7 @@ imap jj 
 
 "powerline
 
-source /home/serge/anaconda2/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
+"source /home/serge/anaconda2/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
 
 python from powerline.vim import setup as powerline_setup
 python powerline_setup()
@@ -86,6 +86,16 @@ iab <expr> d2w system("date -d '+2 weeks' +'%Y-%m-%d'")
 iab <expr> d3w system("date -d '+3 weeks' +'%Y-%m-%d'")
 iab <expr> d1m system("date -d '+1 months' +'%Y-%m-%d'")
 iab <expr> d2m system("date -d '+2 months' +'%Y-%m-%d'")
+
+
+"vim-pencil
+let g:pencil#wrapModeDefault = 'soft'   " default is 'hard'
+
+augroup pencil
+  autocmd!
+  autocmd FileType markdown,mkd,tex,plaintex call pencil#init()
+  autocmd FileType text         call pencil#init({'wrap': 'hard'})
+augroup END
 iab <expr> d3m system("date -d '+3 months' +'%Y-%m-%d'")
 iab <expr> d4m system("date -d '+4 months' +'%Y-%m-%d'")
 iab <expr> d5m system("date -d '+5 months' +'%Y-%m-%d'")
