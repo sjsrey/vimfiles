@@ -9,6 +9,9 @@ The one item not explictly covered in the previous instructions is the installat
 
 1. `git clone https://github.com/powerline/fonts.git ~/fonts`
 2. Open fontbook and add all the fonts using the `+` and navigating to `~/fonts`
+3. `/usr/local/bin/pip install --user powerline-status`
+
+Step 3 assumes you have [homebrew](http://brew.sh)  installed.
 
 ## Installation
 
