@@ -104,6 +104,23 @@ imap <C-]> <C-o>:SearchNotes<CR>
 nmap <C-]> :SearchNotes<CR>
 imap <2-LeftMouse> <C-o>:SearchNotes<CR>
 nmap <2-LeftMouse> :SearchNotes<CR>
+imap ;c :close
+nmap ;c :close
+imap ;h :hide
+nmap ;h :hide
+imap ;l :ls
+nmap ;l :ls
+imap ;n :new
+nmap ;n :new
+imap ;N :vnew
+nmap ;N :vnew
+imap ;o :only
+nmap ;o :only
+nmap ;s :sp
+imap ;s :sp
+imap ;v :vsp
+nmap ;v :vsp
+
 
 "vimscpt the hard way
 map - dd
