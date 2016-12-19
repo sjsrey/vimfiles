@@ -17,7 +17,7 @@ Plugin 'scrooloose/nerdtree.git'
 
 " Additional plugins 
 Plugin 'reedes/vim-pencil'
-Plugin 'LaTeX-Suite-aka-Vim-LaTeX'
+"Plugin 'LaTeX-Suite-aka-Vim-LaTeX'
 Plugin 'instant-markdown.vim'
 Plugin 'MarkdownFootnotes'
 Plugin 'Markdown'
@@ -41,6 +41,12 @@ Plugin 'rakr/vim-two-firewatch'
 
 " goyo
 Plugin 'junegunn/goyo.vim'
+
+" taskwarrior
+"
+Plugin 'vim-airline/vim-airline'
+Plugin 'blindFS/vim-taskwarrior'
+Plugin 'Shougo/unite'
 
 "
 ""vim-notes (Uncomment after setting up dropbox on a new machine)
