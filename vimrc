@@ -45,7 +45,8 @@ Plugin 'junegunn/goyo.vim'
 " taskwarrior
 "
 Plugin 'vim-airline/vim-airline'
-Plug 'blindFS/vim-taskwarrior'
+Plugin 'blindFS/vim-taskwarrior'
+Plugin 'Shougo/unite'
 
 "
 ""vim-notes (Uncomment after setting up dropbox on a new machine)
