@@ -48,7 +48,7 @@ Plugin 'junegunn/goyo.vim'
 "
 Plugin 'vim-airline/vim-airline'
 Plugin 'blindFS/vim-taskwarrior'
-Plugin 'unite.vim'
+Plugin 'Shougo/unite'
 
 "
 ""vim-notes (Uncomment after setting up dropbox on a new machine)
@@ -63,9 +63,35 @@ filetype plugin indent on
 
 
 "NonVundle Stuff
+"
+" Display extra whitespace
+set list listchars=tab:»·,trail:·,nbsp:·
+
+" Navigate properly when lines are wrapped
+nnoremap j gj
+nnoremap k gk
 
 syntax on
-set number
+set rnu
+function! ToggleNumbersOn()
+	set nu!
+	set rnu
+endfunction
+function! ToggleRelativeOn()
+	set rnu!
+	set nu
+endfunction
+autocmd FocusLost * call ToggleRelativeOn()
+autocmd FocusGained * call ToggleRelativeOn()
+autocmd InsertEnter * call ToggleRelativeOn()
+autocmd InsertLeave * call ToggleRelativeOn()
+"Use enter to create new lines w/o entering insert mode
+nnoremap <CR> o<Esc>
+"Below is to fix issues with the ABOVE mappings in quickfix window
+autocmd CmdwinEnter * nnoremap <CR> <CR>
+autocmd BufReadPost quickfix nnoremap <CR> <CR>
+
+
 imap jj 
 
 "powerline
