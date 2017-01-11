@@ -16,6 +16,8 @@ Plugin 'scrooloose/nerdtree.git'
 "Plugin 'Buffergator'
 
 " Additional plugins 
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 Plugin 'reedes/vim-pencil'
 "Plugin 'LaTeX-Suite-aka-Vim-LaTeX'
 Plugin 'instant-markdown.vim'
@@ -54,6 +56,7 @@ Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-notes'
 let g:notes_directories = ['~/Dropbox/v/vim-notes']
 let g:notes_suffix = '.md'
+let g:notes_conceal_url = 0
 
 " Now we can turn our filetype functionality back on
 filetype plugin indent on
