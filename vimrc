@@ -19,6 +19,7 @@ Plugin 'scrooloose/nerdtree.git'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'reedes/vim-pencil'
+Plugin 'tpope/vim-fugitive'
 "Plugin 'LaTeX-Suite-aka-Vim-LaTeX'
 Plugin 'instant-markdown.vim'
 Plugin 'MarkdownFootnotes'
@@ -48,7 +49,7 @@ Plugin 'junegunn/goyo.vim'
 "
 Plugin 'vim-airline/vim-airline'
 Plugin 'blindFS/vim-taskwarrior'
-Plugin 'Shougo/unite'
+"Plugin 'Shougo/unite'
 
 "
 ""vim-notes (Uncomment after setting up dropbox on a new machine)
@@ -167,3 +168,7 @@ nmap <silent> <F3> :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
 " softwrap lines
 au BufRead,BufNewFile *.md,*.txt,*.tex set wrap linebreak nolist textwidth=0 wrapmargin=0
+
+
+"source vimrc
+source $HOME/.vim/gitit.vimrc
