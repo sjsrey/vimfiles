@@ -8,9 +8,9 @@ snippet article
 		journal = {${3:journal}},
 		volume = ${4:volume},
 		number = ${5:number},
-		keywords = ${6:keywwords},
-		month = {${7:month}},
-		pages = {${9:pages}},
+		month = {${6:month}},
+		pages = {${7:pages}},
+		keywords = {${8:keywords}},
 		year = `fnamemodify(expand('%'), ':t:gs?\(\w\+\)\(\d\{4\}\)\(\S\+\)?\2?')`,
 	}
 	~~~~~
@@ -22,7 +22,7 @@ snippet book
 		title = {${3:title}},
 		address = {${4:city}},
 		publisher = {${5:publisher}},
-		keywords = ${6:keywwords},
+		keywords = {${6:keywords}},
 		year = `fnamemodify(expand('%'), ':t:gs?\(\w\+\)\(\d\{4\}\)\(\S\+\)?\2?')`,
 	}
 	~~~~~
@@ -36,7 +36,7 @@ snippet inbook
 		address = {${6:city}},
 		publisher = {${7:publisher}},
 		pages = {${8:pages}},
-		keywords = ${9:keywwords},
+		keywords = {${9:keywords}},
 		year = `fnamemodify(expand('%'), ':t:gs?\(\w\+\)\(\d\{4\}\)\(\S\+\)?\2?')`,
 	}
 	~~~~~
@@ -51,7 +51,7 @@ snippet incollection
 		booktitle = {${5:book title}},
 		address = {${6:city}},
 		publisher = {${7:publisher}},
-		keywords = ${8:keywwords},
+		keywords = {${8:keywords}},
 		year = `fnamemodify(expand('%'), ':t:gs?\(\w\+\)\(\d\{4\}\)\(\S\+\)?\2?')`,
 	}
 	~~~~~
@@ -61,7 +61,7 @@ snippet misc
 	@Misc{ `Filename('', 'id')`,
 		author = {${1:authors separated by "and"}},
 		title = {${2:title}},
-		keywords = ${3:keywwords},
+		keywords = {${3:keywords}},
 	}
 snippet phd
 	~~~~~{.bib}
@@ -69,7 +69,7 @@ snippet phd
 		author = {${1:authors separated by "and"}},
 		title = {${2:title}},
 		school = {${3:school}},
-		keywords = ${4:keywwords},
+		keywords = {${4:keywords}},
 		year = `fnamemodify(expand('%'), ':t:gs?\(\w\+\)\(\d\{4\}\)\(\S\+\)?\2?')`,
 	}
 	~~~~~
