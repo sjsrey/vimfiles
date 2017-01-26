@@ -169,6 +169,12 @@ let NERDTreeShowHidden=1
 " softwrap lines
 au BufRead,BufNewFile *.md,*.txt,*.tex set wrap linebreak nolist textwidth=0 wrapmargin=0
 
+" syntax
+map <F7> :if exists("g:syntax_on") <Bar>
+    \   syntax off <Bar>
+    \ else <Bar>
+    \   syntax enable <Bar>
+    \ endif <CR>
 
 "source vimrc
 source $HOME/.vim/gitit.vimrc

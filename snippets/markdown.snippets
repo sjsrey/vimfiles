@@ -1,0 +1,76 @@
+# Based on http://pts.szit.bme.hu/bibtex-cheat-sheet.txt
+# Most optional fields are not included.
+snippet article
+	~~~~~{.bib}
+	@Article{ `Filename('', 'id')`,
+		author = {${1:authors separated by "and"}},
+		title = {${2:title}},
+		journal = {${3:journal}},
+		volume = ${4:volume},
+		number = ${5:number},
+		keywords = ${6:keywwords},
+		month = {${7:month}},
+		pages = {${9:pages}},
+		year = `fnamemodify(expand('%'), ':t:gs?\(\w\+\)\(\d\{4\}\)\(\S\+\)?\2?')`,
+	}
+	~~~~~
+	${9}
+snippet book
+	~~~~~{.bib}
+	@Book{ `Filename('', 'id')`,
+		${1:author/editor} = {${2:$1s separated by "and"}},
+		title = {${3:title}},
+		address = {${4:city}},
+		publisher = {${5:publisher}},
+		keywords = ${6:keywwords},
+		year = `fnamemodify(expand('%'), ':t:gs?\(\w\+\)\(\d\{4\}\)\(\S\+\)?\2?')`,
+	}
+	~~~~~
+	${7}
+snippet inbook
+	~~~~~{.bib}
+	@InBook{ `Filename('', 'id')`,
+		${1:author/editor} = {${2:$1s separated by "and"}},
+		title = {${3:title}},
+		${4:chapter/pages} = {${5:$4}},
+		address = {${6:city}},
+		publisher = {${7:publisher}},
+		pages = {${8:pages}},
+		keywords = ${9:keywwords},
+		year = `fnamemodify(expand('%'), ':t:gs?\(\w\+\)\(\d\{4\}\)\(\S\+\)?\2?')`,
+	}
+	~~~~~
+	${10}
+snippet incollection
+	~~~~~{.bib}
+	@InCollection{ `Filename('', 'id')`,
+		author = {${1:authors separated by "and"}},
+		title = {${2:title}},
+		pages = {${3:pages}},
+		editor = {${4:editors separated by "and"}},
+		booktitle = {${5:book title}},
+		address = {${6:city}},
+		publisher = {${7:publisher}},
+		keywords = ${8:keywwords},
+		year = `fnamemodify(expand('%'), ':t:gs?\(\w\+\)\(\d\{4\}\)\(\S\+\)?\2?')`,
+	}
+	~~~~~
+	${9}
+snippet misc
+	~~~~~{.bib}
+	@Misc{ `Filename('', 'id')`,
+		author = {${1:authors separated by "and"}},
+		title = {${2:title}},
+		keywords = ${3:keywwords},
+	}
+snippet phd
+	~~~~~{.bib}
+	@PhDThesis{ `Filename('', 'id')`,
+		author = {${1:authors separated by "and"}},
+		title = {${2:title}},
+		school = {${3:school}},
+		keywords = ${4:keywwords},
+		year = `fnamemodify(expand('%'), ':t:gs?\(\w\+\)\(\d\{4\}\)\(\S\+\)?\2?')`,
+	}
+	~~~~~
+	{$5}
