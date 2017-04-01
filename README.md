@@ -1,8 +1,9 @@
-#Customized installation of Vim and related plugins
+# Customized installation of Vim and related plugins
 
 This relies on [Vundle](https://github.com/VundleVim/Vundle.vim) for managing Plugins so that the same Vim setup can be maintained across different machines.
 
-##Installation
+## Installation
+
 	sudo apt-get install powerline
 	git clone https://github.com/powerline/fonts.git
 	cd fonts/
