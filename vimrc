@@ -47,8 +47,8 @@ Plugin 'junegunn/goyo.vim'
 
 " taskwarrior
 "
-Plugin 'vim-airline/vim-airline'
-Plugin 'blindFS/vim-taskwarrior'
+"Plugin 'vim-airline/vim-airline'
+"Plugin 'blindFS/vim-taskwarrior'
 "Plugin 'Shougo/unite'
 
 "
@@ -157,6 +157,8 @@ nmap ;s :sp
 imap ;s :sp
 imap ;v :vsp
 nmap ;v :vsp
+imap ;w :NoteToHtml
+nmap ;w :NoteToHtml
 
 
 "vimscpt the hard way
