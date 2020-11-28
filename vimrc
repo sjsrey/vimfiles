@@ -49,6 +49,9 @@ Plugin 'junegunn/goyo.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
+"
+Plugin 'ctrlpvim/ctrlp.vim'
+
 " taskwarrior
 "
 "Plugin 'vim-airline/vim-airline'
@@ -107,9 +110,9 @@ imap jj 
 
 "source /home/serge/anaconda2/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
 
-%python3 from powerline.vim import setup as powerline_setup
-%python3 powerline_setup()
-%python3 del powerline_setup
+"%python3 from powerline.vim import setup as powerline_setup
+"%python3 powerline_setup()
+"%python3 del powerline_setup
 set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 13
 set laststatus=2
 colorscheme default
@@ -168,8 +171,28 @@ nmap ;v :vsp
 imap ;w :NoteToHtml
 nmap ;w :NoteToHtml
 
+" keyboard shortcuts from maximum-awesome
+let mapleader = ','
+noremap <C-h> <C-w>h
+noremap <C-j> <C-w>j
+noremap <C-k> <C-w>k
+noremap <C-l> <C-w>l
+noremap <leader>l :Align
+nnoremap <leader>a :Ag<space>
+nnoremap <leader>b :CtrlPBuffer<CR>
+nnoremap <leader>d :NERDTreeToggle<CR>
+nnoremap <leader>f :NERDTreeFind<CR>
+nnoremap <leader>t :CtrlP<CR>
+nnoremap <leader>T :CtrlPClearCache<CR>:CtrlP<CR>
+nnoremap <leader>] :TagbarToggle<CR>
+nnoremap <leader><space> :call whitespace#strip_trailing()<CR>
+nnoremap <leader>g :GitGutterToggle<CR>
+noremap <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
 
-"vimscpt the hard way
+
+
+
+"vimscpt  the hard way
 map - dd
 
 "NERDTree
