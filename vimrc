@@ -45,11 +45,19 @@ Plugin 'rakr/vim-two-firewatch'
 " goyo
 Plugin 'junegunn/goyo.vim'
 
+" airline
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
 " taskwarrior
 "
 "Plugin 'vim-airline/vim-airline'
 "Plugin 'blindFS/vim-taskwarrior'
 "Plugin 'Shougo/unite'
+"
+" latex
+Plugin 'lervag/vimtex'
+Plugin 'vim-latex/vim-latex'
 
 "
 ""vim-notes (Uncomment after setting up dropbox on a new machine)
@@ -99,9 +107,9 @@ imap jj 
 
 "source /home/serge/anaconda2/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
 
-python3 from powerline.vim import setup as powerline_setup
-python3 powerline_setup()
-python3 del powerline_setup
+%python3 from powerline.vim import setup as powerline_setup
+%python3 powerline_setup()
+%python3 del powerline_setup
 set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 13
 set laststatus=2
 colorscheme default
